@@ -50,10 +50,27 @@ button {
   justify-self: center;
 }
 
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
 button:hover {
   background-color: whitesmoke;
   border: #e04b52 solid 1px;
   color: #e04b52;
+}
+
+@keyframes color {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0.33;
+  }
 }
 
 .container {
@@ -96,4 +113,8 @@ button:hover {
   font-size: 18px;
   font-family: monospace;
   margin: 3px;
+}
+
+h2{
+  text-shadow: 1px 3px 5px rgb(133, 133, 133);
 }
